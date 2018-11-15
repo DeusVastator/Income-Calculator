@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <title>Income Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+
+<body>
+    
+<div class="main">
+    
+    <h1>Income Calculator</h1>
+    <p><i>Type in your information below to calculate your minimum/ideal salary <b>per month</b>. <br> Please use <b>dollar or cent amount</b> (example: 5 or 6.25).<br> All questions should be considered on a <b>monthly</b> basis.</i></p>
+    
+    <form class="form" id="jForm" name="jForm" onsubmit="incomeCalc()">
+        <fieldset>
+            
+        <legend><b>Income Calculator</b></legend>
+            
+        <label>What is your cost of rent/mortage?</label>
+        <br>
+        &dollar;<input type="number" name="rent" value="" id="rent" maxlength="8" required>
+        <br>
+        <br>
+        
+        
+        <label>How much is your health insurance?</label>
+        <br>
+        &dollar;<input type="number" name="insurance" value="" id="insure" maxlength="8" required>
+        <br>
+        <br>
+        
+        
+        <label>How much do you spend on transportation? <br><i>e.g. gas/car maintenance.</i></label>
+        <br>
+        &dollar;<input type="number" name="trans" value="" id="trans" maxlength="8" required>
+        <br>
+        <br>
+        
+        
+        <label>How much do you need to spend on equipment rental/repair/maintenance for work?</label>
+        <br>
+        &dollar;<input type="number" name="repair" value="" id="repair" maxlength="8" required>
+        <br>
+        <br>
+        
+        
+        <label>How much do you spend on communication each month? e.g. cellphone, internet.</label>
+        <br>
+        &dollar;<input type="number" name="coms" name="coms" value="" id="coms" maxlength="8" required>
+        <br>
+        <br>
+            
+            
+        <label>How much do you spend on utilities?</label>
+        <br>
+        &dollar;<input type="number" name="utility" value="" id="utility" maxlength="8" required>
+        <br>
+        <br>
+            
+            
+        <label>How much do you spend on food each month?</label>
+        <br>
+        &dollar;<input type="number" name="food" value="" id="food" maxlength="8" required>
+        <br>
+        <br>
+        
+        
+        <label>What is the level of risk/safety you can tolerate?</label>
+        <br>
+        <select name="risk" id="risk">
+            <option value="0.20">Low</option>
+            <option value="0.10">Medium</option>
+            <option value="0.05">Large</option>
+            
+        </select>
+        <br>
+        <br>
+        
+        
+        <label>How aggressively do you wish to save for retirement?</label>
+        <br>
+        <select name="retire" id="retire">
+            <option value="0.05">Cautious</option>
+            <option value="0.10">Normal</option>
+            <option value="0.20">Aggressive</option>
+            
+        </select>
+        <br>
+        <br>
+        
+        
+        <label>How many hours would you like to work each week?</label>
+        <br>
+        <input type="number" name="weekly" value="" id="weekly" maxlength="8" required>
+        <br>
+        <br>
+        <p id="answer"></p>
+        <div class="button">
+            
+        
+            
+            <button type="submit"  value="Submit">Submit</button>
+        
+        
+            
+        </div>
+            
+            </fieldset>
+ 
+    </form>
+
+    
+    
+</div>  
+    
+    
+    <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script src="js/form.js"></script>
+    
+
+   <script src="js/main.js"></script> 
+    
+</body>
+
+</html>
