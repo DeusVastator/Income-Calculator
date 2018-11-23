@@ -4,8 +4,6 @@
 
 
 
-
-
 // Create a function named incomeCalc().
 
 function incomeCalc( ) {

@@ -15,12 +15,12 @@
     <h1>Income Calculator</h1>
     <p><i>Type in your information below to calculate your minimum/ideal salary <b>per month</b>. <br> Please use <b>dollar or cent amount</b> (example: 5 or 6.25).<br> All questions should be considered on a <b>monthly</b> basis.</i></p>
     
-    <form class="form" id="jForm" name="jForm" onsubmit="incomeCalc()">
+    <form class="form" id="jForm" name="jForm">
         <fieldset>
             
         <legend><b>Income Calculator</b></legend>
             
-        <label>What is your cost of rent/mortage?</label>
+        <label for="rent">What is your cost of rent/mortage?</label>
         <br>
         &dollar;<input type="number" name="rent" value="" id="rent" maxlength="8" required>
         <br>
@@ -103,7 +103,7 @@
             
         
             
-            <button type="submit"  value="Submit">Submit</button>
+            <button type="button" onclick="incomeCalc()" value="Submit">submit</button>
         
         
             
@@ -121,8 +121,7 @@
     <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
     <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-    <script src="js/form.js"></script>
-    
+    <script type="text/javascript" charset="utf-8" src="js/form.js"></script>
 
    <script src="js/main.js"></script> 
     
